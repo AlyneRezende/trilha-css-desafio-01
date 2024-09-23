@@ -7,18 +7,15 @@ body {
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(49, 168, 221, .2), rgba(0, 0, 0, 0.759)), url(../images/banner.png);
     background-size: cover;
-    width: 100%;
     height: 605px;
     border-bottom: 1px solid #33A8DB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 60px;
 }
 
 .banner-content {
     width: 510px;
-    height: 393px;
     text-align: center;
+    margin: auto;
 }
 
 .banner .logo {
@@ -30,7 +27,10 @@ body {
 }
 
 .banner .logo img {
-    margin: 20px auto;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 h1 {
@@ -39,11 +39,11 @@ h1 {
     font-size: 40px;
     line-height: 46.96px;
     color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
     background-image: linear-gradient(rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+    background-clip: text;
     padding: 16px;
     filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.65));
+    -webkit-background-clip: text;
 }
 
 h1 + p {
@@ -59,20 +59,16 @@ h1 + p {
     text-transform: uppercase;
     width: 326px;
     height: 57px;
-    color: rgba(49, 168, 221, 1);
-    text-align: center;
-    line-height: 18.78px;
-    letter-spacing: 5px;
+    font-size: 16px;
     font-weight: 900;
-    border: 2px solid;
+    color: rgba(49, 168, 221, 1);
+    letter-spacing: 5px;
     border-image: linear-gradient(rgba(59, 161, 205, 1), rgba(21, 114, 183, 1)) 10;
 }
 
 #course-content {
-    display: block;
     text-align: center;
     width: 792px;
-    height: 325px;
     margin: 70px auto;
 }
 
@@ -93,13 +89,12 @@ h2 {
 }
 
 .modules-list {
-    display: inline-block;
-    justify-content: center;
+    margin: 24px 0;
 }
 
 .module {
     width: 535px;
-    padding: 16px 87px 16px 87px;
+    padding: 16px;
     font-size: 14px;
     font-weight: 400;
     border: 1px solid rgba(51, 168, 219, 1);
@@ -114,18 +109,17 @@ h2 {
 }
 
 #transform-world {
-    width: 100%;
     height: 363px;
     background-image: url(../images/woman-code.png);
     background-size: cover;
     background-attachment: fixed;
-    border: 1px solid rgba(51, 168, 219, 1);
+    border-top: 1px solid rgba(51, 168, 219, 1);
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
     opacity: .8;
 }
 
 #transform-world p {
     width: 244px;
-    height: 141px;
     font-size: 40px;
     font-weight: 900;
     text-transform: lowercase;
@@ -161,7 +155,7 @@ footer {
     border-top: 1px solid rgba(51, 168, 219, 1);
 }
 
-footer img {
+footer .dio-logo {
     width: 310px;
     height: 44px;
     margin-top: 41px;
